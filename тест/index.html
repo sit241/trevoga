@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>тест на тревожность</title>
+	<link rel="stylesheet" href="css/style2.css">
+	<link rel="stylesheet" href="css/styleRemove.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="block">
+		<p id="question">тест на тревожность</p>
+		<div class="numberQuestionP" id="numberQuestionP">
+			<p id="numberQuestionP2">0</p>
+			<p>/20</p>
+		</div>
+		<div class="btn" id="btn">
+			<button type="submit" onclick="questionNo()">нет</button>
+			<!-- <button type="submit" onclick="question50_50()">50/50</button> -->
+			<button type="submit" onclick="questionYes()">да</button>
+		</div>
+	</div>
+	<div class="result" id="result">
+		<p>
+			Расшифровка результата:<br>
+			0:&nbsp&nbsp Норма<br>
+			0-5:&nbsp&nbsp В пределах нормы, больше отдыхайте<br>
+			5-10:&nbsp&nbsp Вам стоит заняться своим душевным состоянием<br>
+			10-20:&nbsp&nbsp Вам стоит СРОЧНО заняться своим душевным состоянием<br>
+			30 и больше:&nbsp&nbsp Вы обязаны обратится к врачу<br>
+		</p>
+	</div>
+	<script src="test.js"></script>
+</body>
+
+</html>
