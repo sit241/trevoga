@@ -7,6 +7,7 @@ var arrayB = b.split(space);
 let numberQuestion = 0
 let anxietyLevel = -1
 let pQuestion = document.getElementById("question")
+let result2 = document.getElementById("result2")
 pQuestion.innerText = 'Вы готовы начать тест?'
 
 
@@ -33,9 +34,9 @@ let questionNo = () => {
 
 let stopTest = () => {
 	if (numberQuestion === 20) {
-		let btn = document.getElementById('btn')
-		btn.style.display = 'none'
-		pQuestion.innerText = 'тест закончен, ваш уровень тревожности: ' + anxietyLevel + ' очков'
+		let block = document.getElementById('block')
+		block.style.display = 'none'
+		result2.innerText = anxietyLevel + ' очков'
 		let result = document.getElementById('result')
 		result.style.display = 'flex'
 	}

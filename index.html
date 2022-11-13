@@ -1,134 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Тревожность</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Тревожность</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;700&display=swap"
+			rel="stylesheet"
+		/>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;700&display=swap" rel="stylesheet">
-
-    <!-- <link rel="stylesheet" href="css/styleRemove.css">
+		<!-- <link rel="stylesheet" href="css/styleRemove.css">
     <link rel="stylesheet" href="css/style1.css"> -->
-    <link rel="stylesheet" href="css/styleSCSS.css">
-    <link rel="stylesheet" href="css/style_test.css">
-</head>
+		<link rel="stylesheet" href="css/styleSCSS.css" />
+		<link rel="stylesheet" href="css/style_test.css" />
+	</head>
 
-<body class="center">
-    <div id="test" class="test">
-        <div class="test_wrapper">
-            <div class="block">
-                <p id="question">тест на тревожность</p>
-                <div class="numberQuestionP" id="numberQuestionP">
-                    <p id="numberQuestionP2">0</p>
-                    <p>/20</p>
-                </div>
-                <div class="btn" id="btn">
-                    <button type="submit" onclick="questionNo()">нет</button>
-                    <!-- <button type="submit" onclick="question50_50()">50/50</button> -->
-                    <button type="submit" onclick="questionYes()">да</button>
-                </div>
-            </div>
-            <div class="result" id="result">
-                <a href="#center1">
-                    <div onclick="testStop()">
-                        <p>узнать результат</p>
-                    </div>
-                </a>
+	<body class="center">
+		<div id="test" class="test">
+			<div class="test_wrapper">
+				<div id="block" class="block">
+					<p id="question">тест на тревожность</p>
+					<div class="numberQuestionP" id="numberQuestionP">
+						<p id="numberQuestionP2">0</p>
+						<p>/20</p>
+					</div>
+					<div class="btn" id="btn">
+						<button type="submit" onclick="questionNo()">нет</button>
+						<!-- <button type="submit" onclick="question50_50()">50/50</button> -->
+						<button type="submit" onclick="questionYes()">да</button>
+					</div>
+				</div>
+				<div class="result" id="result">
+					<div class="vin">
+						<p>
+							Поздравляем!<br />
+							Вы только что успешно<br />
+							прошли тест
+						</p>
+					</div>
+					<div class="poc">
+						<p>
+							Ваш показатель<br />
+							тревожности:
+						</p>
+					</div>
+					<div class="oc">
+						<p id="result2">
+							0<br />
+							очков
+						</p>
+					</div>
+					<a href="#center1" class="res1">
+						<div onclick="testStop()">
+							<p>узнать значение</p>
+						</div>
+					</a>
+					<div class="res">
+						<p>
+							Жмите и узнавайте <br />
+							что значит ваш результат
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="wrapper">
+			<div class="wrapper-win win1 center">
+				<div class="win-wrap center">
+					<h1 class="center">Тревожность</h1>
+					<div class="center-win1 center">
+						<img class="img1" src="img/21321.png" alt="" />
+						<h2>
+							Чувствуешь тревожность?<br />
+							Как будто все мысли спутаны?
+						</h2>
+					</div>
+					<div class="fyter-win1 center">
+						<h2>Распутать мысли</h2>
+						<img style="justify-content: flex-end" src="img/Vector 1.png" />
+					</div>
+				</div>
+			</div>
+			<div class="wrapper-win win2 center">
+				<div class="margin">
+					<p class="p1 center">
+						Приветственный текст, с информацией о тревожности, и мотивацией
+						пройти тест
+					</p>
+					<div class="center">
+						<p class="p2 center">
+							(подводка к тесту)... сложно бороться с чем-то, не зная точный
+							размер проблемы. Так-что проходите тест.
+						</p>
+						<button class="button" onclick="testGo()">пройти тест</button>
+					</div>
+				</div>
+			</div>
+			<div class="wrapper-win win4 center">
+				<a href="#" name="center1"></a>
+				<div class="margin center">
+					<iframe
+						width="560"
+						height="315"
+						src="https://www.youtube.com/embed/HH3etRQjpO4?controls=0"
+						title="YouTube video player"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen
+					></iframe>
 
-            </div>
-        </div>
-    </div>
-    <div class="wrapper">
-        <div class="wrapper-win win1 center">
-            <div class="win-wrap center">
-                <h1 class="center">Тревожность</h1>
-                <div class="center-win1 center">
-                    <img class="img1" src="img/25eaddab4fe7f8b3845717e5fc187a75_1024x768 1.png" alt="">
-                    <h2>Сегодня каждый 14-й страдает <br> от Тревожного расстройства</h2>
-                </div>
-                <div class="fyter-win1 center">
-                    <h2>Что же делать?</h2>
-                    <img style="justify-content: flex-end;" src="img/Vector 1.png">
-                </div>
-            </div>
-        </div>
-        <div class="wrapper-win win2 center">
-            <div class="margin">
-                <p class="p1 center">Приветственный текст, с информацией о тревожности, и мотивацией пройти тест</p>
-                <div class="center">
-                    <p class="p2 center">(подводка к тесту)... сложно бороться с чем-то, не зная точный размер проблемы.
-                        Так-что проходите тест.</p>
-                    <button class="button" onclick="testGo()">пройти тест</button>
-                </div>
-            </div>
-        </div>
-        <div class="test__gitLens">тест гитЛенс</div>
-        <div class="test__gitLens">тест новой ветки</div>
-        <div class="test__gitLens">третий комит в ветки создал</div>
-        <div class="test__gitLens">четвертый комит в ветки создал, буду пытаться удалить третий</div>
-        <div class="wrapper-win win3"></div>
-        <div class="wrapper-win win4 center">
-            <a href="#" name="center1"></a>
-            <div class="margin center">
+					<div class="win4-center">
+						<div class="zagalovok center">
+							<p class="p1">Текст</p>
+							<p class="p2">
+								(более подробная информация о курсе. Так же тут будет написано
+								что результат теста ниже)
+							</p>
+						</div>
+						<div class="otzuvu">
+							<div class="otzuv">
+								<div class="circle">
+									<img
+										src="img/stock-photo-happy-man-sitting-clenched-hands.jfif"
+										alt=""
+									/>
+								</div>
+								<div>
+									<p>
+										Хочу поблагодарить вас за чёткую организацию курсов, за
+										творческий подход, за умение правильно организовать
+										деятельность слушателей курсов! Я думаю, что это не
+										последние курсы, на которых я обучалась у вас! Спасибо
+									</p>
+								</div>
+							</div>
+							<div class="otzuv">
+								<div class="circle">
+									<img
+										src="img/stock-photo-happy-man-sitting-clenched-hands.jfif"
+										alt=""
+									/>
+								</div>
+								<div>
+									<p>
+										Спасибо вам большое !Курсы объективно очень полезные.
+										Понравился всесторонний охват рассматриваемых вопросов.
+										Очень понравился предоставленный учебный материал. Обучение
+										удобное, позволяет сохранить себе информацию для
+										последующего использования в работе. Спасибо!
+									</p>
+								</div>
+							</div>
+							<div class="otzuv">
+								<div class="circle">
+									<img
+										src="img/stock-photo-happy-man-sitting-clenched-hands.jfif"
+										alt=""
+									/>
+								</div>
+								<div>
+									<p>
+										Спасибо за обучение. Курс очень интенсивный и дает
+										достаточный объем знаний.Очень удобный, доступный, понятный,
+										последовательный процесс обучения. Выражаю глубокую
+										благодарность организаторам и администраторам!
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
 
-                <iframe src="https://www.youtube.com/embed/x-iGWHSj8Dg" title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                </iframe>
-
-                <div class="win4-center">
-                    <div class="zagalovok center">
-                        <p class="p1">Текст</p>
-                        <p class="p2">(более подробная информация о курсе. Так же тут будет написано что результат теста
-                            ниже)</p>
-                    </div>
-                    <div class="otzuvu">
-                        <div class="otzuv">
-                            <div class="circle"></div>
-                            <div>
-                                <p>Хочу поблагодарить вас за чёткую организацию курсов, за творческий подход, за умение
-                                    правильно организовать деятельность
-                                    слушателей курсов!
-                                    Я думаю, что это не последние курсы, на которых я обучалась у вас!
-                                    Спасибо</p>
-                            </div>
-                        </div>
-                        <div class="otzuv">
-                            <div class="circle"></div>
-                            <div>
-                                <p>Спасибо вам большое !Курсы объективно очень полезные. Понравился всесторонний охват
-                                    рассматриваемых вопросов. Очень
-                                    понравился предоставленный учебный материал. Обучение удобное, позволяет сохранить
-                                    себе информацию для последующего
-                                    использования в работе. Спасибо!</p>
-                            </div>
-                        </div>
-                        <div class="otzuv">
-                            <div class="circle"></div>
-                            <div>
-                                <p>Спасибо за обучение. Курс очень интенсивный и дает достаточный объем знаний.Очень
-                                    удобный, доступный, понятный,
-                                    последовательный процесс обучения. Выражаю глубокую благодарность организаторам и
-                                    администраторам!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <button>
-                    <p>перейти в telegram<br />чтобы узнать результат</p>
-                </button>
-
-            </div>
-        </div>
-        <div class="wrapper-win win5"></div>
-    </div>
-    <script src="js/test.js"></script>
-    <script src="js/script.js"></script>
-</body>
-
+					<button>
+						<p>перейти в telegram<br />чтобы узнать результат</p>
+					</button>
+				</div>
+			</div>
+		</div>
+		<script src="js/test.js"></script>
+		<script src="js/script.js"></script>
+	</body>
 </html>
